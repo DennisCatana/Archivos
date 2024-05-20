@@ -1,0 +1,7 @@
+{
+  "name": "Archivos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
