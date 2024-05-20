@@ -53,12 +53,12 @@ export class HomePage {
     if (file.type.split('/')[0] !== 'image') {
       console.log('File type is not supported!');
       return;
-    }
+    }   
     this.isFileUploading = true;
     this.isFileUploaded = false;
     this.imgName = file.name;
     // Storage path
-    const fileStoragePath = `filesStorage/${new Date().getTime()}_${file.name}`; /////////XD
+    const fileStoragePath = `202121370/${new Date().getTime()}_${file.name}`;
     // Image reference
     const imageRef = this.afStorage.ref(fileStoragePath);
     // File upload task

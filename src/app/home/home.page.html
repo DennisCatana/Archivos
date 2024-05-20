@@ -17,10 +17,10 @@
   <!-- File upload progress bar -->
   <div *ngIf="percentageVal | async as percentage">
     Progress: {{ percentage | number }}%
-    <ion-progress-bar value="{{ percentage / 100 }}"></ion-progress-bar>
+    <ion-progress-bar [value]="percentage / 100"></ion-progress-bar>
   </div>
   <div *ngIf="trackSnapshot | async as snap">
-    File size: {{ snap.totalBytes | formatFileSize }} Data transfered: {{
+    File size: {{ snap.totalBytes | formatFileSize }} Data transferred: {{
     snap.bytesTransferred | formatFileSize }}
   </div>
 </ion-content>
